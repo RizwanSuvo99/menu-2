@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<style>
+        body{
+	margin: 0;
+	padding: 0; 
+	background-image: url(images/1.jpg);
+	background-size: 100% 700px;
+}
+.nav{
+	width: 100%;
+	height: 50px;
+	background: #0d006d;
+	box-shadow: 2px 0px 2px 0px;
+	opacity: .88;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	list-style-type: none;
+}
+ul li{
+	float: left;
+	margin-top: 2px;
+}
+ul li a{
+	width: 100px;
+	color: white;
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50px 0px 50px 0px;
+	border-right: 2px solid green;
+	padding: 10px;
+}
+ul li ul{
+	background: #0d006d;
+	display: none;
+}
+ul li ul li{
+	float: none;
+	border-top: 1px solid green;
+}
+ul li:hover ul{
+	display: block;
+	color: green;
+}
+.searchBar{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+
+}
+a:hover{
+	background:#00A5C9;
+	transition:0.5s all ease;
+}
+button{
+	border-radius: 8px;
+	cursor: pointer;
+	background: #0d006d;
+	color: white;
+	float: right;
+	position: relative;
+}
+button:hover{
+	background: #00A5C9;
+	box-shadow: 2px 0px 2px 0px;
+}
+input{
+	border-radius: 8px;
+	
+}
+    </style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+		
+		<li><a href="">Home</a></li>
+		<li><a href="">Computer</a></li>
+		<li><a href="">Software</a>
+			<ul>
+				
+				<li><a href="">Windows</a></li>
+				<li><a href="">Driver</a></li>
+				<li><a href="">Adobe CS6</a></li>
+				<li><a href="">Camtasia</a></li>
+				<li><a href="">Pubg</a></li>
+				<li><a href="">Floor Plan</a></li>
+
+			</ul>
+
+		</li>
+		<li><a href="">Tutorial</a></li>
+		<li><a href="">Feedback</a></li>
+		<li><a href="">About Us</a></li>
+	</ul>
+	<form class="searchBar">
+		<input type="text" placeholder="Search Here">
+		<button>Search</button>
+	</form>
+	</div>
+</body>
+</html>
